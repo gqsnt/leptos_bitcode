@@ -60,7 +60,6 @@ mod postcard;
 pub use postcard::*;
 
 mod stream;
-mod bitcode;
 
 use crate::error::ServerFnError;
 use futures::Future;
