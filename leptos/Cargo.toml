@@ -99,6 +99,10 @@ tracing = [
 nonce = ["base64", "rand"]
 spin = ["leptos-spin-macro"]
 islands = ["leptos_macro/islands", "dep:serde_json"]
+bitcode = [
+  "server_fn/bitcode",
+  "leptos_server/bitcode",
+]
 trace-component-props = [
   "leptos_macro/trace-component-props",
   "leptos_dom/trace-component-props",
@@ -113,6 +117,7 @@ denylist = [
   "rustls",
   "default-tls",
   "wasm-bindgen",
+  "bitcode",
   "rkyv",                  # was causing clippy issues on nightly
   "trace-component-props",
   "spin",
